@@ -40,10 +40,10 @@ public:
         landmark_pub.publish(rd);
 
         //publica valores de velocidade para o robo navegar sozinho
-        geometry_msgs::Twist velocity;
-        velocity.linear.x = 0.2;
-        velocity.angular.z = 0.2;
-        Robot_pub.publish(velocity);
+        //geometry_msgs::Twist velocity;
+        //velocity.linear.x = 0.2;
+        //velocity.angular.z = 0.2;
+        //Robot_pub.publish(velocity);
 
         if(rd.distancia <= 0.5){
             ROS_INFO("Eu estou proximo: %s", rd.nome.c_str());
